@@ -1,0 +1,28 @@
+# Xcode
+*.xcuserstate
+*.xcworkspace
+xcuserdata/
+DerivedData/
+*.xcscmblueprint
+*.xccheckout
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Build products
+*.app
+*.dSYM.zip
+*.dSYM
+
+# DMG files
+*.dmg
+
+# Temporary files
+*.swp
+*~
