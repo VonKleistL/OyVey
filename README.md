@@ -24,6 +24,16 @@
 - Channel points and predictions
 - Multi-stream support
 
+- ### 🎙️ Real-Time Voice Transcription
+
+- Live audio transcription using iLiveData RTVT API
+- Support for 20+ languages with automatic language detection
+- Real-time translation to target language
+- Microphone audio capture (16kHz, 16-bit PCM)
+- Low-latency transcription overlay
+- WebSocket-based streaming communication
+- Built-in error handling and reconnection
+
 ### 🛠 Modding Capabilities
 - Custom themes and styles
 - UI element customization
@@ -78,6 +88,28 @@ open OyVey.xcodeproj
 
 # Build and run (⌘+R)
 ```
+
+### Enabling Transcription
+
+To use the real-time transcription feature:
+
+1. **Microphone Permissions**: Add the following to your `Info.plist` (or in Xcode project settings):
+```xml
+<key>NSMicrophoneUsageDescription</key>
+<string>OyVey needs microphone access for real-time voice transcription</string>
+```
+
+2. **Using the Feature**:
+   - Launch OyVey and open a Twitch stream
+   - Click the "Transcription" button at the bottom of the window
+   - Click "Start" to begin transcription
+   - The app will request microphone permission on first use
+   - Transcribed text will appear in the overlay panel
+
+3. **Configuration**:
+   - Source language: Auto-detected by default (configurable in RTVTManager)
+   - Target language: English by default (configurable in RTVTManager)
+   - Audio format: 16kHz, 16-bit PCM (automatic)
 
 ## 🔌 Plugin Development
 
