@@ -6,17 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7568FF562EC6DCBE0081B3D9 /* RTVTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7568FF552EC6DCBE0081B3D9 /* RTVTManager.swift */; };
+		7568FF5D2EC6DE200081B3D9 /* PluginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7568FF5C2EC6DE200081B3D9 /* PluginAPI.swift */; };
+		7568FF622EC6DE260081B3D9 /* webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7568FF612EC6DE260081B3D9 /* webview.swift */; };
+		7568FF642EC6DE260081B3D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7568FF5E2EC6DE260081B3D9 /* ContentView.swift */; };
+		7568FF652EC6DE260081B3D9 /* OyVeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7568FF5F2EC6DE260081B3D9 /* OyVeyApp.swift */; };
+		7568FF672EC6DE440081B3D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7568FF662EC6DE440081B3D9 /* Assets.xcassets */; };
+		7568FF692EC6DE870081B3D9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7568FF682EC6DE870081B3D9 /* README.md */; };
+		7568FF6B2EC6DF100081B3D9 /* README 2.md in Resources */ = {isa = PBXBuildFile; fileRef = 7568FF6A2EC6DF100081B3D9 /* README 2.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		7568FF552EC6DCBE0081B3D9 /* RTVTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTVTManager.swift; sourceTree = "<group>"; };
+		7568FF572EC6DCCB0081B3D9 /* OyVey-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OyVey-Bridging-Header.h"; sourceTree = "<group>"; };
+		7568FF5C2EC6DE200081B3D9 /* PluginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginAPI.swift; sourceTree = "<group>"; };
+		7568FF5E2EC6DE260081B3D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7568FF5F2EC6DE260081B3D9 /* OyVeyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyVeyApp.swift; sourceTree = "<group>"; };
+		7568FF612EC6DE260081B3D9 /* webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webview.swift; sourceTree = "<group>"; };
+		7568FF662EC6DE440081B3D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7568FF682EC6DE870081B3D9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7568FF6A2EC6DF100081B3D9 /* README 2.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "README 2.md"; sourceTree = "<group>"; };
 		758EA4412EC45E9F009DFCF2 /* OyVey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OyVey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		758EA4432EC45E9F009DFCF2 /* OyVey */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = OyVey;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		758EA43E2EC45E9F009DFCF2 /* Frameworks */ = {
@@ -32,8 +44,16 @@
 		758EA4382EC45E9F009DFCF2 = {
 			isa = PBXGroup;
 			children = (
-				758EA4432EC45E9F009DFCF2 /* OyVey */,
 				758EA4422EC45E9F009DFCF2 /* Products */,
+				7568FF572EC6DCCB0081B3D9 /* OyVey-Bridging-Header.h */,
+				7568FF552EC6DCBE0081B3D9 /* RTVTManager.swift */,
+				7568FF6A2EC6DF100081B3D9 /* README 2.md */,
+				7568FF5C2EC6DE200081B3D9 /* PluginAPI.swift */,
+				7568FF5E2EC6DE260081B3D9 /* ContentView.swift */,
+				7568FF5F2EC6DE260081B3D9 /* OyVeyApp.swift */,
+				7568FF612EC6DE260081B3D9 /* webview.swift */,
+				7568FF662EC6DE440081B3D9 /* Assets.xcassets */,
+				7568FF682EC6DE870081B3D9 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,9 +80,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				758EA4432EC45E9F009DFCF2 /* OyVey */,
-			);
 			name = OyVey;
 			packageProductDependencies = (
 			);
@@ -82,6 +99,7 @@
 				TargetAttributes = {
 					758EA4402EC45E9F009DFCF2 = {
 						CreatedOnToolsVersion = 26.2;
+						LastSwiftMigration = 2620;
 					};
 				};
 			};
@@ -109,6 +127,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7568FF692EC6DE870081B3D9 /* README.md in Resources */,
+				7568FF6B2EC6DF100081B3D9 /* README 2.md in Resources */,
+				7568FF672EC6DE440081B3D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +140,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7568FF622EC6DE260081B3D9 /* webview.swift in Sources */,
+				7568FF642EC6DE260081B3D9 /* ContentView.swift in Sources */,
+				7568FF652EC6DE260081B3D9 /* OyVeyApp.swift in Sources */,
+				7568FF562EC6DCBE0081B3D9 /* RTVTManager.swift in Sources */,
+				7568FF5D2EC6DE200081B3D9 /* PluginAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +272,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DYUP26D449;
@@ -278,6 +305,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "OyVey-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -290,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DYUP26D449;
@@ -322,6 +352,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "OyVey-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
