@@ -6,16 +6,13 @@
 //
 
 import SwiftUI
+import WebKit
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        TwitchWebView()
+            .frame(minWidth: 800, minHeight: 600)
+            .background(Color.black)
     }
 }
 
