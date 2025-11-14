@@ -11,3 +11,12 @@ struct TwitchWebView: NSViewRepresentable {
     
     func updateNSView(_ nsView: WKWebView, context: Context) {}
 }
+
+@main
+struct TwitchNativeApp: App {
+    var body: some Scene {
+        WindowGroup {
+            TwitchWebView()
+        }
+    }
+}
